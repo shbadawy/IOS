@@ -2,7 +2,7 @@
 //  QuizBrain.swift
 //  Quizzler-iOS13
 //
-//  Created by Mac on 9/5/20.
+//  Created by Shimaa on 9/5/20.
 //  Copyright © 2020 The App Brewery. All rights reserved.
 //
 
