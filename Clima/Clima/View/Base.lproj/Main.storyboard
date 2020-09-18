@@ -137,7 +137,7 @@
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="sun.max" catalog="system" width="128" height="124"/>
         <namedColor name="Color">
-            <color red="0.087584026159999995" green="0.21151024099999999" blue="0.22745668890000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.087999999523162842" green="0.21199999749660492" blue="0.22699999809265137" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
 </document>
