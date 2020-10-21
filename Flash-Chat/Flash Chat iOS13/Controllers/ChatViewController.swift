@@ -129,6 +129,7 @@ extension ChatViewController : UITableViewDataSource{
             cell.cellView.backgroundColor = UIColor(named: K.BrandColors.lightPurple)
             
         }else{
+            
             cell.rightImage.isHidden = false
             cell.leftImage.isHidden = true
             cell.cellView.backgroundColor = UIColor(named: K.BrandColors.purple)
