@@ -8,7 +8,7 @@
 
 import Foundation
 
-class CalculatorLogic {
+struct CalculatorLogic {
     
     private var firstNumber:Double = 0.0
     private var total:Double = 0.0
@@ -19,7 +19,7 @@ class CalculatorLogic {
     var diplayValue:Double = 0
     var isInt:Bool = true
     
-    func calculate() -> String {
+    mutating func calculate() -> String {
         
         switch buttonTitle {
         case "AC":
@@ -31,7 +31,6 @@ class CalculatorLogic {
         case "=":
             if lastOp != "" {
                 firstNumber = total
-                print(lastOp)
                 switch lastOp {
                 case "+":
                     total = total + diplayValue
@@ -52,7 +51,6 @@ class CalculatorLogic {
                 lastOp = ""
                 opIsSet=false
                 isInt=true
-                
                 
             }
             return String(total)
@@ -97,23 +95,13 @@ class CalculatorLogic {
                 return lastOp
                 
             }
-//            else {
-//
-//                if buttonTitle != "="{
-//                    lastOp = buttonTitle
-//                    return (lastOp,isInt)
-//
-//                }
-//
-//            }
-            
             
         }
         return ""
         
     }
     
-    private func clear() -> String {
+    private mutating func clear() -> String {
         
         lastOp = ""
         total = 0
